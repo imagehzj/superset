@@ -1,5 +1,7 @@
 FROM ttbb/base
 
+ENV SUPERSET_HOME /opt/sh/superset
+
 RUN dnf update -y && \
 dnf install -y gcc gcc-c++ libffi-devel && \
 dnf install -y openssl-devel cyrus-sasl-devel openldap-devel && \
